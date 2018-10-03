@@ -1,4 +1,5 @@
-## Austin Larsen -- UVU Sysadmin II -- Testing Purposes Only ## 
+## Created by: Austin Larsen -- UVU Sysadmin II -- Testing Purposes Only ## 
+## Install Nginx PlayBook ## 
 ---
 - name: Install nginx
   hosts: localhost
@@ -15,10 +16,12 @@
       name: nginx
       state: present
 
-  - name: Insert Index Page
-    template:
-      src: index.html
-      dest: /usr/share/nginx/html/index.html
+  #- name: Insert Default Index Page
+  #  template:
+  #    src: index.html
+  #    dest: /usr/share/nginx/html/index.html
+
+
 
   - name: Start NGiNX
     service:
