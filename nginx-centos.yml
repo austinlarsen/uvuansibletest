@@ -18,10 +18,10 @@
       state: present
    
 
-  - name: Insert Default Index Page
-    template:
-      src: /etc/ansible/sources/index.html
-      dest: /usr/share/nginx/html/index.html
+  #- name: Insert Default Index Page
+  #  template:
+  #    src: /etc/ansible/sources/index.html
+  #    dest: /usr/share/nginx/html/index.html
 
   - name: copy the nginx default config file
     copy:
