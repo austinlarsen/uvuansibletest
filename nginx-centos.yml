@@ -25,9 +25,9 @@
        
        
   ## Restart Nginx ## 
-  - name: restart nginx
-      service:
-        name: nginx
-        state: restarted
-      become: yes
+ # - name: restart nginx
+ #     service:
+ #       name: nginx
+ #       state: restarted
+ #     become: yes
 
