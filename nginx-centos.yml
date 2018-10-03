@@ -23,10 +23,10 @@
   #    src: /etc/ansible/sources/index.html
   #    dest: /usr/share/nginx/html/index.html
 
-  - name: copy the nginx default config file
-    copy:
-      src: /etc/ansible/sources/nginx.basic
-      dest: /etc/nginx/sites-available/default.cfg
+  # - name: copy the nginx default config file
+  #  copy:
+  #    src: /etc/ansible/sources/nginx.basic
+  #    dest: /etc/nginx/sites-available/default.cfg
    
 
   - name: Start NGiNX
