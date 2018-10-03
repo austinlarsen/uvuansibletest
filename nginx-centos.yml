@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: ansible.uvu.edu
   tasks:
    - name: Install EPEL release for nginx
         yum: 
