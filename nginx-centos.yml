@@ -1,7 +1,7 @@
 ## Austin Larsen -- UVU Sysadmin II -- Testing Purposes Only ## 
 ---
 - name: Install nginx
-  hosts: ansible-test.uvu.edu
+  hosts: localhost
   become: true
 
   tasks:
