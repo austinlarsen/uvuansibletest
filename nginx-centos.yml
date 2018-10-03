@@ -12,16 +12,16 @@
   state: started 
   
   ## Configure Nginx ## 
-   - name: copy the nginx config file and restart nginx
-      copy:
-        src: /etc/ansible/sources/nginx.basic
-        dest: /etc/nginx/sites-available/test-site.cfg
-      become: yes
-    - name: create symlink
-      file:
-        src: /etc/nginx/sites-available/test-site.cfg
-        dest: /etc/nginx/sites-enabled/default
-        state: link
+  # - name: copy the nginx config file and restart nginx
+  #   copy:
+  #     src: /etc/ansible/sources/nginx.basic
+  #      dest: /etc/nginx/sites-available/test-site.cfg
+  #   become: yes
+  #  - name: create symlink
+  #    file:
+  #      src: /etc/nginx/sites-available/test-site.cfg
+  #      dest: /etc/nginx/sites-enabled/default
+  #      state: link
        
        
   ## Restart Nginx ## 
